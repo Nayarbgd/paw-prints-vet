@@ -3,6 +3,10 @@
   "version": "2.0.0",
   "description": "Paw Prints Veterinary Clinic - Multi-page SEO-friendly React website",
   "main": "server.js",
+  "engines": {
+    "node": "20.x",
+    "npm": ">=9.0.0"
+  },
   "scripts": {
     "dev": "concurrently -k \"PORT=3001 node server.js\" \"vite\"",
     "build": "vite build",
