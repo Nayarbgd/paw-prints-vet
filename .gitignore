@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Local databases / mock data submissions
+data/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS metadata files
+.DS_Store
+Thumbs.db

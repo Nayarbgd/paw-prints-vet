@@ -1,0 +1,16 @@
+{
+  "name": "paw-prints-vet",
+  "version": "1.0.0",
+  "description": "High-converting veterinary clinic website and backend for Paw Prints Veterinary Clinic Dubai",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "author": "Antigravity",
+  "license": "ISC"
+}
