@@ -134,7 +134,7 @@ export default function Home() {
           </div>
           <TestimonialsCarousel />
           <div className="testimonials-footer text-center reveal-on-scroll">
-            <a href="https://maps.google.com/maps?q=366P%2B2X+Dubai" target="_blank" rel="noopener noreferrer" className="google-reviews-link">
+            <a href="https://www.google.com/maps/place/Paw+Prints+Veterinary+Clinic/@25.0600842,55.2348111,760m/data=!3m1!1e3!4m8!3m7!1s0x3e5f6f8945a8416f:0x209c0ce60610b0c!8m2!3d25.0600842!4d55.237386!9m1!1b1!16s%2Fg%2F11w8kdzw9q?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="google-reviews-link">
               See all 113 reviews on Google Maps →
             </a>
           </div>
