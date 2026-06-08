@@ -5,6 +5,9 @@ jspm_packages/
 # Local databases / mock data submissions
 data/
 
+# Vite build output
+dist/
+
 # Logs
 logs
 *.log
