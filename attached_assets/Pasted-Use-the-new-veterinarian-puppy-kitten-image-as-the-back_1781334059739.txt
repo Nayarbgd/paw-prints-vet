@@ -1,0 +1,62 @@
+Use the new veterinarian + puppy + kitten image as the background for the Services page hero section.
+
+IMPORTANT: the image must feel like a natural part of the website, not like a rectangular picture pasted on top of the page.
+
+Requirements:
+
+1. Set the image as an absolutely positioned background layer inside the hero section only.
+
+2. The image should occupy approximately the right 55-60% of the hero area and remain behind all text and buttons.
+
+3. Keep all current text, buttons, spacing and layout exactly as they are.
+
+4. Create a seamless blend between the image and the site's dark background:
+
+* Add a large left-side mask using:
+  background: linear-gradient(
+  to right,
+  #050505 0%,
+  rgba(5,5,5,0.98) 20%,
+  rgba(5,5,5,0.85) 35%,
+  rgba(5,5,5,0.55) 50%,
+  rgba(5,5,5,0.15) 70%,
+  rgba(5,5,5,0) 100%
+  );
+
+* Add a radial dark vignette around all four edges of the image:
+  radial-gradient(circle at center,
+  transparent 55%,
+  rgba(5,5,5,0.2) 70%,
+  rgba(5,5,5,0.55) 85%,
+  rgba(5,5,5,0.95) 100%
+  );
+
+5. Add a subtle blur transition on the image edges:
+   filter: blur(0.5px);
+   mask-image: radial-gradient(circle at center, black 65%, transparent 100%);
+
+6. Add a very soft warm coral glow behind the subjects:
+   rgba(255,107,107,0.12)
+   blur radius around 180-220px.
+
+7. The user should never perceive where the image ends and where the page background begins. The image must appear to emerge naturally from darkness.
+
+8. Desktop:
+
+* background-size: cover;
+* background-position: right center;
+* no visible borders;
+* no hard edges;
+* cinematic premium look.
+
+9. Mobile:
+
+* crop the image intelligently;
+* keep the puppy and kitten visible;
+* reduce image opacity slightly (0.88-0.92);
+* preserve text readability;
+* maintain the same dark fade effect;
+* absolutely no visible rectangular limits.
+
+Goal:
+The hero should feel like Apple-level cinematic design: the veterinarian, puppy and kitten appear to emerge softly from the darkness, with the transition into the site's dark background being completely imperceptible.
