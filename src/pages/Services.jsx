@@ -80,7 +80,7 @@ export default function Services() {
       <section className="section-padding bg-charcoal">
         <div className="container">
           <div className="section-header text-center reveal-on-scroll" style={{ marginBottom: 50 }}>
-            <h2 style={{ color: 'var(--color-white)' }}>Why Thousands Trust Paw Prints</h2>
+            <h2 style={{ color: 'var(--color-white)' }}>Why Pet Owners Trust Paw Prints</h2>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 30 }}>
             {whyUs.map((w, i) => (
