@@ -1,22 +1,63 @@
 import { useEffect } from 'react'
 import SEOHead from '../components/SEOHead'
 
-// ============================================================
-// CAL.COM BOOKING URL
-// To update: replace the URL below with a new Cal.com booking link.
-//
-// Future integrations (all via Cal.com dashboard):
-//   → Google Calendar  : Settings → Calendars → Connect Google
-//   → Mobile alerts    : Settings → Notifications
-//   → Webhooks         : Settings → Developer → Webhooks
-//   → n8n automation   : Use Cal.com webhook as n8n trigger
-//   → WhatsApp notify  : Cal.com webhook → n8n → WhatsApp Business API
-// ============================================================
-const CAL_BOOKING_URL = "https://cal.com/brayan-gutierrez-5d3ijh/veterinary-appointment"
+const CAL_LINK = "brayan-gutierrez-5d3ijh/veterinary-appointment"
+
+function initCal() {
+  ;(function (C, A, L) {
+    let p = function (a, ar) { a.q.push(ar) }
+    let d = C.document
+    C.Cal = C.Cal || function () {
+      let cal = C.Cal
+      let ar = arguments
+      if (!cal.loaded) {
+        cal.ns = {}
+        cal.q = cal.q || []
+        d.head.appendChild(d.createElement("script")).src = A
+        cal.loaded = true
+      }
+      if (ar[0] === L) {
+        const api = function () { p(api, arguments) }
+        const namespace = ar[1]
+        api.q = api.q || []
+        if (typeof namespace === "string") {
+          Cal.ns[namespace] = Cal.ns[namespace] || api
+          p(Cal.ns[namespace], ar)
+          return
+        }
+        p(cal, ar)
+        return
+      }
+      p(cal, ar)
+    }
+  })(window, "https://app.cal.com/embed/embed.js", "init")
+
+  Cal("init", { origin: "https://cal.com" })
+  Cal("inline", {
+    elementOrSelector: "#cal-booking-container",
+    calLink: CAL_LINK,
+    layout: "month_view"
+  })
+  Cal("ui", {
+    cssVarsPerTheme: {
+      light: { "cal-brand": "#E8645A" },
+      dark:  { "cal-brand": "#E8645A" }
+    },
+    hideEventTypeDetails: false,
+    layout: "month_view"
+  })
+}
 
 export default function BookAppointment() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' })
+
+    const container = document.getElementById('cal-booking-container')
+    if (container && container.querySelector('iframe')) {
+      return
+    }
+
+    initCal()
   }, [])
 
   return (
@@ -47,21 +88,12 @@ export default function BookAppointment() {
         </div>
       </section>
 
-      {/* ── Cal.com Calendar ── */}
+      {/* ── Cal.com Embed (auto-resizes — no scroll capture on mobile) ── */}
       <section className="book-cal-section">
-        <div className="book-cal-container">
-          <div className="book-cal-wrapper">
-            <iframe
-              src={CAL_BOOKING_URL}
-              title="Book a Veterinary Appointment — Paw Prints Clinic Dubai"
-              frameBorder="0"
-              allowFullScreen
-            />
-          </div>
-        </div>
+        <div id="cal-booking-container" className="book-cal-embed" />
       </section>
 
-      {/* ── Direct Contact Footer ── */}
+      {/* ── Direct Contact ── */}
       <section className="book-page-footer">
         <div className="container">
           <p className="book-footer-label">Prefer to reach us directly?</p>
