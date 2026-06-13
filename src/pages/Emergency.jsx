@@ -4,7 +4,7 @@ import SEOHead from '../components/SEOHead'
 
 const PHONE = 'tel:0544337908'
 const WHATSAPP = 'https://wa.me/971544337908?text=Emergency%20-%20My%20pet%20needs%20urgent%20care'
-const DIRECTIONS = 'https://maps.google.com/maps?q=366P%2B2X+Dubai'
+const DIRECTIONS = 'https://maps.app.goo.gl/ZYQSiTUCAm6eR9x69'
 
 const emergencySigns = [
   { icon: '💨', title: 'Difficulty Breathing', desc: 'Laboured breathing, open-mouth breathing, or blue/grey gums.' },
