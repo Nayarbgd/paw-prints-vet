@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import SEOHead from '../components/SEOHead'
-import PageHero from '../components/PageHero'
 
 const contactItems = [
   {
@@ -60,16 +60,38 @@ export default function Contact() {
         title="Contact & Location | Paw Prints Veterinary Clinic Dubai"
         description="Find Paw Prints Veterinary Clinic in Arjan, Dubai. Open 24/7. Call 054 433 7908, WhatsApp us, or get directions to our clinic."
       />
-      <PageHero
-        badge="Contact & Map"
-        title="Find Us in Dubai"
-        subtitle="We're located in Arjan and open around the clock — every day of the year, including holidays."
-        breadcrumbs={[{ label: 'Contact & Map' }]}
-        ctas={[
-          { href: 'tel:0544337908', label: '📞 Call 054 433 7908', variant: 'btn-primary' },
-          { href: 'https://wa.me/971544337908', label: '💬 WhatsApp Us', variant: 'btn-whatsapp' },
-        ]}
-      />
+      {/* Cinematic Hero */}
+      <section className="contact-hero">
+        {/* Cat glow blob */}
+        <div className="contact-hero-glow" />
+
+        {/* Cat image — desktop only */}
+        <div className="contact-hero-cat-wrap">
+          <img
+            src="/contact-cat.png"
+            alt="Black cat at Paw Prints Veterinary Clinic Dubai"
+            className="contact-hero-cat"
+            loading="eager"
+          />
+        </div>
+
+        <div className="container contact-hero-inner">
+          <nav className="breadcrumb" aria-label="Breadcrumb">
+            <Link to="/">Home</Link>
+            <span className="crumb-sep">›</span>
+            <span className="crumb-current">Contact & Map</span>
+          </nav>
+          <div className="page-hero-badge">🐾 Contact & Map</div>
+          <h1>Find Us in Dubai</h1>
+          <p className="subtitle">
+            We're located in Arjan and open around the clock —<br className="contact-hero-br" /> every day of the year, including holidays.
+          </p>
+          <div className="page-hero-ctas">
+            <a href="tel:0544337908" className="btn btn-primary">📞 Call 054 433 7908</a>
+            <a href="https://wa.me/971544337908" className="btn btn-whatsapp">💬 WhatsApp Us</a>
+          </div>
+        </div>
+      </section>
 
       {/* Contact details */}
       <section className="section-padding bg-charcoal">
