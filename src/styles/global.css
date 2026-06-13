@@ -105,12 +105,6 @@ header.scrolled{box-shadow:var(--shadow-md);}
 .breadcrumb .crumb-sep{color:rgba(255,255,255,0.25);}
 .breadcrumb .crumb-current{color:rgba(255,255,255,0.7);}
 
-/* Page Hero image overlay (absolute-positioned, no grid) */
-.page-hero-text-constrained{max-width:55%;}
-.page-hero-image-wrap{position:absolute;right:0;bottom:0;height:100%;width:46%;pointer-events:none;display:flex;align-items:flex-end;justify-content:flex-end;}
-.page-hero-img{height:115%;width:auto;max-width:none;object-fit:contain;object-position:bottom right;filter:brightness(0.9) saturate(0.88);display:block;}
-.page-hero-img-fade{display:none;}
-
 /* Services Grid */
 .services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:30px;}
 .service-card{background-color:var(--color-white);padding:40px 30px;border-radius:var(--radius-md);box-shadow:var(--shadow-sm);border:1px solid var(--color-gray-light);transition:var(--transition);display:flex;flex-direction:column;}
@@ -459,8 +453,6 @@ footer{background-color:#0b0b0b;color:rgba(255,255,255,0.7);padding:80px 0 30px 
   .footer-grid{grid-template-columns:1fr 1fr;gap:40px;}
   .service-detail-grid{grid-template-columns:1fr;gap:40px;}
   .page-hero h1{font-size:2.4rem;}
-  .page-hero-split{grid-template-columns:1fr;gap:0;}
-  .page-hero-image-wrap{display:none;}
 }
 @media(max-width:768px){
   .nav-links{display:none;}
