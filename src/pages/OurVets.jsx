@@ -9,7 +9,7 @@ const vets = [
     name: 'Dr. Aisha Al Mansoori',
     role: 'Senior Veterinarian & Soft Tissue Surgeon',
     bio: '8 years of clinical experience with feline and canine medicine and soft-tissue surgery in the UAE. Passionate about stress-free cat handling techniques and advanced diagnostic imaging.',
-    img: 'https://images.unsplash.com/photo-1594824813573-246434de83fb?q=80&w=500&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=500&auto=format&fit=crop',
     alt: 'Dr. Aisha Al Mansoori - Senior Veterinarian',
     specialties: ['Feline Medicine', 'Soft Tissue Surgery', 'Emergency Triage', 'Diagnostic Imaging'],
     languages: ['Arabic', 'English'],
