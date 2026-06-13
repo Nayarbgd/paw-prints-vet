@@ -38,6 +38,7 @@ function ScrollToTop() {
 }
 
 function AppRoutes() {
+  const { pathname } = useLocation()
   return (
     <>
       <ScrollToTop />
@@ -63,7 +64,7 @@ function AppRoutes() {
         </Routes>
       </main>
       <Footer />
-      <WhatsAppFloat />
+      {pathname !== '/emergency' && <WhatsAppFloat />}
     </>
   )
 }
