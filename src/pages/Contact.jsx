@@ -69,6 +69,8 @@ export default function Contact() {
           { href: 'tel:0544337908', label: '📞 Call 054 433 7908', variant: 'btn-primary' },
           { href: 'https://wa.me/971544337908', label: '💬 WhatsApp Us', variant: 'btn-whatsapp' },
         ]}
+        image="/contact-cat.png"
+        imageAlt="Cat at Paw Prints Veterinary Clinic Dubai"
       />
 
       {/* Contact details */}
