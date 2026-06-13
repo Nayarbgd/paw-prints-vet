@@ -47,6 +47,7 @@ export default function Reviews() {
           { href: 'https://maps.google.com/maps?q=366P%2B2X+Dubai', label: 'See Google Reviews', variant: 'btn-primary' },
           { to: '/contact', label: 'Book Appointment', variant: 'btn-secondary' },
         ]}
+        fadeDivider
       />
 
       {/* Stats Bar */}

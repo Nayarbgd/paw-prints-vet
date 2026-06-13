@@ -87,6 +87,7 @@ export default function BookAppointment() {
           </div>
         </div>
       </section>
+      <div className="section-fade-divider" aria-hidden="true" />
 
       {/* ── Cal.com Embed (auto-resizes — no scroll capture on mobile) ── */}
       <section className="book-cal-section">

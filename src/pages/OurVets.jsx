@@ -70,6 +70,7 @@ export default function OurVets() {
         bgSize="68% auto"
         bgPosition="right center"
         heroMinHeight="760px"
+        fadeDivider
       />
 
       {/* Team Cards */}

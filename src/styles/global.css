@@ -105,6 +105,10 @@ header.scrolled{box-shadow:var(--shadow-md);}
 .breadcrumb .crumb-sep{color:rgba(255,255,255,0.25);}
 .breadcrumb .crumb-current{color:rgba(255,255,255,0.7);}
 
+/* Section Fade Divider — dark hero to light section cinematic transition */
+.section-fade-divider{height:120px;margin-top:-120px;background:linear-gradient(to bottom,rgba(5,5,5,0) 0%,rgba(5,5,5,0.35) 30%,rgba(5,5,5,0.65) 60%,rgba(255,255,255,0.95) 100%);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);position:relative;z-index:10;pointer-events:none;}
+@media(max-width:768px){.section-fade-divider{height:70px;margin-top:-70px;}}
+
 /* Cinematic Page Hero (with background image) */
 .page-hero-cinematic{min-height:480px;display:flex;align-items:center;}
 .page-hero-cinematic .container{width:100%;max-width:600px;margin-left:0;}
