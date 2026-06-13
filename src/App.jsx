@@ -9,6 +9,7 @@ import Reviews from './pages/Reviews'
 import OurVets from './pages/OurVets'
 import Contact from './pages/Contact'
 import BookAppointment from './pages/BookAppointment'
+import Emergency from './pages/Emergency'
 import GeneralCheckups from './pages/services/GeneralCheckups'
 import Vaccinations from './pages/services/Vaccinations'
 import EmergencyCare from './pages/services/EmergencyCare'
@@ -54,6 +55,7 @@ function AppRoutes() {
           <Route path="/services/nutrition" element={<Nutrition />} />
           <Route path="/services/grooming" element={<Grooming />} />
           <Route path="/services/surgery" element={<Surgery />} />
+          <Route path="/emergency" element={<Emergency />} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/our-vets" element={<OurVets />} />
           <Route path="/contact" element={<Contact />} />

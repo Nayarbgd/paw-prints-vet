@@ -1,0 +1,265 @@
+Create a new standalone page called:
+
+/emergency
+
+Add a new menu item in the navigation bar:
+
+🚨 Emergency 24/7
+
+Place it between "Our Vets" and "Contact & Map".
+
+This page should be fully responsive (desktop, tablet and mobile) and optimized for SEO and conversions.
+
+=========================
+SEO REQUIREMENTS
+=========================
+
+Page Title:
+24/7 Emergency Vet in Dubai | Paw Prints Veterinary Clinic
+
+Meta Description:
+Emergency veterinary clinic in Dubai open 24/7. Immediate care for poisoning, breathing problems, accidents, seizures, bleeding, and other pet emergencies. Call now.
+
+URL:
+https://domain.com/emergency
+
+H1:
+24/7 Emergency Veterinary Care in Dubai
+
+Use proper semantic HTML:
+- One H1
+- H2 sections
+- FAQ schema markup
+- LocalBusiness + VeterinaryCare schema markup
+- Breadcrumb schema
+
+Include keywords naturally:
+
+- emergency vet Dubai
+- 24 hour vet Dubai
+- emergency veterinary clinic Dubai
+- emergency pet hospital Dubai
+- dog emergency Dubai
+- cat emergency Dubai
+- poisoning in dogs Dubai
+- pet emergency care Dubai
+
+Optimize for Core Web Vitals:
+- lazy load images
+- compress images
+- use responsive image sizes
+
+=========================
+SECTION 1 – HERO
+=========================
+
+Background image:
+Emergency veterinary care, professional clinic atmosphere.
+
+Headline:
+24/7 Emergency Veterinary Care in Dubai
+
+Subheadline:
+When every minute matters, our emergency veterinary team is available day and night, including weekends and UAE public holidays.
+
+Buttons:
+
+Primary:
+📞 Call Emergency Now
+
+Secondary:
+💬 WhatsApp Emergency Team
+
+Third:
+📍 Get Directions
+
+Add trust badges:
+
+✓ Open 24/7/365
+✓ ICU-Level Equipment
+✓ Immediate Triage
+✓ Emergency Surgery Available
+
+=========================
+SECTION 2 – IS THIS AN EMERGENCY?
+=========================
+
+Title:
+Bring Your Pet Immediately If You Notice:
+
+Display as cards with icons:
+
+Difficulty breathing
+Collapse or unconsciousness
+Seizures
+Heavy bleeding
+Poison ingestion
+Hit by a car
+Unable to urinate
+Bloated abdomen
+Continuous vomiting
+Severe allergic reaction
+Heatstroke
+Difficulty giving birth
+
+Each card should have a short explanation.
+
+=========================
+SECTION 3 – WHAT TO DO RIGHT NOW
+=========================
+
+Create an emergency action guide.
+
+For each emergency show:
+
+Title
+Quick actions
+What NOT to do
+
+1. Poisoning
+DO:
+Remove access to the substance.
+Take a photo of the product.
+Call immediately.
+
+DON'T:
+Do not induce vomiting unless instructed.
+
+2. Difficulty Breathing
+DO:
+Keep the pet calm.
+Minimize movement.
+Come immediately.
+
+DON'T:
+Do not force food or water.
+
+3. Seizures
+DO:
+Move dangerous objects away.
+Dim lights.
+Record the duration.
+
+DON'T:
+Do not put your hands in the pet's mouth.
+
+4. Heatstroke
+DO:
+Move to shade.
+Use cool (not ice-cold) water.
+Call immediately.
+
+DON'T:
+Do not immerse in ice.
+
+5. Hit by a Car
+DO:
+Move carefully using a towel or blanket.
+Keep the pet warm.
+Come immediately.
+
+DON'T:
+Do not manipulate injured limbs.
+
+6. Bloat / Swollen Abdomen
+DO:
+Seek immediate treatment.
+
+DON'T:
+Do not wait.
+
+Add a disclaimer:
+
+This information is not a substitute for veterinary care. If you suspect an emergency, contact us immediately.
+
+=========================
+SECTION 4 – WHAT HAPPENS WHEN YOU ARRIVE
+=========================
+
+Timeline with icons:
+
+1. Immediate Triage
+2. Stabilization
+3. Diagnostics
+4. Treatment Plan
+5. Continuous Monitoring
+
+=========================
+SECTION 5 – OUR EMERGENCY EQUIPMENT
+=========================
+
+Cards with icons:
+
+Oxygen Therapy
+ICU Monitoring
+Emergency Surgery
+IV Fluid Therapy
+Cardiac Monitoring
+Blood Testing
+Ultrasound
+Hospitalization Ward
+
+=========================
+SECTION 6 – WHY CHOOSE PAW PRINTS
+=========================
+
+Cards:
+
+Open 24/7/365
+No Public Holiday Closures
+Fast Triage
+Experienced Emergency Team
+ICU-Level Equipment
+Continuous Monitoring
+
+=========================
+SECTION 7 – FAQ
+=========================
+
+Create an accordion.
+
+Questions:
+
+What counts as a veterinary emergency?
+Should I call before coming?
+How quickly will my pet be seen?
+How much does emergency care cost?
+My pet ate something toxic. What should I do?
+Can I bring any animal for emergency treatment?
+
+Implement FAQ Schema markup.
+
+=========================
+SECTION 8 – FINAL CTA
+=========================
+
+Large emergency banner:
+
+Your pet can't wait.
+Our emergency team is ready 24/7.
+
+Buttons:
+
+📞 Call Emergency Now
+💬 WhatsApp Emergency Team
+📍 Get Directions
+
+=========================
+MOBILE IMPROVEMENTS
+=========================
+
+Create a sticky bottom emergency bar on mobile:
+
+[📞 Call Now] [💬 WhatsApp]
+
+Buttons should remain visible while scrolling.
+
+Maintain the existing Paw Prints visual design:
+dark theme,
+coral accent colors,
+rounded cards,
+soft shadows,
+premium veterinary appearance.
+
+Do not affect the existing website layout.
+This must be a new standalone page.

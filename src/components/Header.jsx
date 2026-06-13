@@ -26,6 +26,7 @@ export default function Header() {
           <li><NavLink to="/services" className={navLinkClass} onClick={closeMenu}>Services</NavLink></li>
           <li><NavLink to="/reviews" className={navLinkClass} onClick={closeMenu}>Reviews</NavLink></li>
           <li><NavLink to="/our-vets" className={navLinkClass} onClick={closeMenu}>Our Vets</NavLink></li>
+          <li><NavLink to="/emergency" className={navLinkClass} onClick={closeMenu} style={({ isActive }) => ({ color: isActive ? 'var(--color-primary)' : 'var(--color-primary)', opacity: isActive ? 1 : 0.9 })}>🚨 Emergency 24/7</NavLink></li>
           <li><NavLink to="/contact" className={navLinkClass} onClick={closeMenu}>Contact & Map</NavLink></li>
         </ul>
 
