@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
 
-export default function PageHero({ badge, title, subtitle, breadcrumbs = [], ctas = [], bgImage = null }) {
+export default function PageHero({ badge, title, subtitle, breadcrumbs = [], ctas = [], bgImage = null, bgSize = 'cover', bgPosition = 'center right', heroMinHeight = null }) {
   const sectionStyle = bgImage ? {
     backgroundImage: `linear-gradient(90deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.80) 35%, rgba(0,0,0,0.35) 65%, rgba(0,0,0,0) 100%), url(${bgImage})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center right',
+    backgroundSize: bgSize,
+    backgroundPosition: bgPosition,
     backgroundRepeat: 'no-repeat',
+    ...(heroMinHeight ? { minHeight: heroMinHeight } : {}),
   } : {}
   return (
     <section className={`page-hero${bgImage ? ' page-hero-cinematic' : ''}`} style={sectionStyle}>

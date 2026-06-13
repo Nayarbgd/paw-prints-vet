@@ -67,6 +67,9 @@ export default function OurVets() {
           { href: 'tel:0544337908', label: '📞 Call 054 433 7908', variant: 'btn-secondary' },
         ]}
         bgImage="/vets-hero.jpg"
+        bgSize="68% auto"
+        bgPosition="right center"
+        heroMinHeight="760px"
       />
 
       {/* Team Cards */}
