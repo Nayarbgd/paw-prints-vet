@@ -58,14 +58,15 @@ export default function OurVets() {
         description="Meet the experienced veterinary team at Paw Prints Clinic in Arjan, Dubai. Dr. Aisha Al Mansoori, Dr. David Chen, and Amna Al Hashimi — specialists in cat and dog medicine."
       />
       <PageHero
-        badge="Our Team"
-        title="Meet Our Veterinary Experts"
-        subtitle="Our experienced team of vets and technicians work together around the clock to deliver the highest standard of care for your cats and dogs."
+        badge="Our Veterinary Team"
+        title="Meet the Vets Who Treat Every Pet Like Family"
+        subtitle="Experienced veterinarians providing compassionate, evidence-based care for cats and dogs in Dubai, available whenever your pet needs us."
         breadcrumbs={[{ label: 'Our Vets' }]}
         ctas={[
-          { to: '/contact', label: 'Book with Our Team', variant: 'btn-primary' },
-          { href: 'tel:0544337908', label: 'Call 054 433 7908', variant: 'btn-secondary' },
+          { to: '/book', label: 'Book Appointment', variant: 'btn-primary' },
+          { href: 'tel:0544337908', label: '📞 Call 054 433 7908', variant: 'btn-secondary' },
         ]}
+        bgImage="/vets-hero.jpg"
       />
 
       {/* Team Cards */}

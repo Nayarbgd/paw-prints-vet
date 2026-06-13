@@ -1,0 +1,67 @@
+I uploaded a new background image for the "Our Vets" section.
+
+Use this image as a decorative hero background for the top of the Our Vets page, following the exact same design philosophy used in the Contact & Map hero with the black cat image.
+
+Requirements:
+
+1. Use the uploaded image as a background image only. Do NOT place text or buttons inside the image itself.
+
+2. Create a dark cinematic hero section:
+   - Background image should cover the entire hero area.
+   - Use background-size: cover.
+   - Use background-position: center right on desktop.
+   - Use background-position: center center on mobile.
+
+3. Add a dark gradient overlay so text remains highly readable:
+   background:
+   linear-gradient(
+      90deg,
+      rgba(5,5,5,0.92) 0%,
+      rgba(5,5,5,0.80) 40%,
+      rgba(5,5,5,0.45) 70%,
+      rgba(5,5,5,0.25) 100%
+   );
+
+4. Add a subtle warm coral glow (#ff6b6b with low opacity) behind the image, similar to the Contact hero.
+
+5. Keep all text as real HTML elements above the image.
+
+Hero content layout:
+
+Small badge:
+👩‍⚕️ OUR VETERINARY TEAM
+
+Main title:
+Meet the Vets Who Treat Every Pet Like Family
+
+Subtitle:
+Experienced veterinarians providing compassionate, evidence-based care for cats and dogs in Dubai, available whenever your pet needs us.
+
+Primary button:
+Book Appointment
+
+Secondary button:
+Call 054 433 7908
+
+6. Desktop layout:
+- Image occupies approximately the right half visually.
+- Text block aligned left.
+- Vertical center alignment.
+
+7. Mobile layout:
+- Hero stacks naturally.
+- Image remains visible behind the text.
+- Text centered.
+- No clipping.
+- No horizontal scrolling.
+- Buttons stack vertically if necessary.
+- Maintain excellent readability.
+
+8. Preserve the same premium aesthetic used throughout the website:
+- Dark luxury theme
+- Soft shadows
+- Coral accents
+- Smooth gradients
+- Cinematic appearance
+
+The goal is for the Our Vets section to feel emotional and trustworthy, as if the visitor is seeing a real caring veterinarian-pet relationship, while keeping the exact premium visual quality of the Contact & Map hero section.
