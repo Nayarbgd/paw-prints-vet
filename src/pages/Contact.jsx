@@ -62,19 +62,19 @@ export default function Contact() {
       />
       {/* Cinematic Hero */}
       <section className="contact-hero">
-        {/* Cat glow blob */}
-        <div className="contact-hero-glow" />
 
-        {/* Cat image — desktop only */}
-        <div className="contact-hero-cat-wrap">
+        {/* Cat column — desktop only */}
+        <div className="contact-hero-cat-wrap" aria-hidden="true">
+          <div className="contact-hero-cat-glow" />
           <img
             src="/contact-cat.png"
-            alt="Black cat at Paw Prints Veterinary Clinic Dubai"
+            alt=""
             className="contact-hero-cat"
             loading="eager"
           />
         </div>
 
+        {/* Text — left 55-60% */}
         <div className="container contact-hero-inner">
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link to="/">Home</Link>
