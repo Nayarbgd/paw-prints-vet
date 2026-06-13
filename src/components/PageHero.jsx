@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 export default function PageHero({ badge, title, subtitle, breadcrumbs = [], ctas = [], image, imageAlt = '' }) {
   return (
     <section className="page-hero">
-      <div className={`container${image ? ' page-hero-split' : ''}`}>
-        <div className="page-hero-text">
+      <div className="container">
+        <div className={image ? 'page-hero-text-constrained' : undefined}>
           {breadcrumbs.length > 0 && (
             <nav className="breadcrumb" aria-label="Breadcrumb">
               <Link to="/">Home</Link>
@@ -35,14 +35,13 @@ export default function PageHero({ badge, title, subtitle, breadcrumbs = [], cta
             </div>
           )}
         </div>
-
-        {image && (
-          <div className="page-hero-image-wrap" aria-hidden="true">
-            <img src={image} alt={imageAlt} className="page-hero-img" loading="lazy" />
-            <div className="page-hero-img-fade" />
-          </div>
-        )}
       </div>
+
+      {image && (
+        <div className="page-hero-image-wrap" aria-hidden="true">
+          <img src={image} alt={imageAlt} className="page-hero-img" loading="lazy" />
+        </div>
+      )}
     </section>
   )
 }
