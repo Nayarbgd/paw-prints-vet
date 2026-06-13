@@ -15,7 +15,7 @@
 //   → n8n              : Use webhook URL from Cal.com as n8n trigger
 //   → WhatsApp notify  : Cal.com webhook → n8n → WhatsApp Business API
 // ============================================================
-const CAL_BOOKING_URL = "";
+const CAL_BOOKING_URL = "https://cal.com/brayan-gutierrez-5d3ijh/veterinary-appointment";
 
 export default function CalBooking() {
   return (
