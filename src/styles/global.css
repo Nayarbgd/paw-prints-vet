@@ -361,68 +361,62 @@ footer{background-color:#0b0b0b;color:rgba(255,255,255,0.7);padding:80px 0 30px 
 @keyframes bounce-loop{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
 
 /* ── Contact Cinematic Hero ── */
-@keyframes cat-float{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+@keyframes cat-float{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
 
 .contact-hero{
   position:relative;
-  min-height:480px;
-  padding-top:120px;
+  min-height:520px;
+  padding-top:140px;
   padding-bottom:80px;
   overflow:hidden;
   background:
-    radial-gradient(circle at 75% 50%, rgba(255,100,100,0.08), transparent 45%),
-    linear-gradient(180deg, #111 0%, #080808 100%);
+    radial-gradient(circle at 70% 50%, rgba(180,60,40,0.18), transparent 55%),
+    linear-gradient(180deg, #0e0e0e 0%, #080808 100%);
   color:var(--color-white);
 }
-.contact-hero-glow{
-  position:absolute;
-  right:5%;
-  bottom:0;
-  width:50%;
-  height:90%;
-  background:radial-gradient(ellipse at center, rgba(255,120,120,0.12) 0%, transparent 70%);
-  pointer-events:none;
-  z-index:1;
-}
+.contact-hero-glow{display:none;}
 .contact-hero-cat-wrap{
   position:absolute;
   right:0;
+  top:0;
   bottom:0;
-  width:50%;
-  max-width:600px;
+  width:58%;
   z-index:2;
   pointer-events:none;
+  /* Fade left edge into dark background */
+  mask-image:linear-gradient(to right, transparent 0%, rgba(0,0,0,0.6) 18%, black 38%, black 85%, transparent 100%);
+  -webkit-mask-image:linear-gradient(to right, transparent 0%, rgba(0,0,0,0.6) 18%, black 38%, black 85%, transparent 100%);
 }
 .contact-hero-cat{
   width:100%;
-  height:auto;
+  height:100%;
+  object-fit:cover;
+  object-position:center center;
   display:block;
-  mix-blend-mode:screen;
-  filter:
-    drop-shadow(0 0 40px rgba(255,120,120,0.18))
-    drop-shadow(0 0 80px rgba(255,120,120,0.10));
-  mask-image:linear-gradient(to bottom, black 60%, transparent 100%);
-  -webkit-mask-image:linear-gradient(to bottom, black 60%, transparent 100%);
   animation:cat-float 8s ease-in-out infinite;
 }
 .contact-hero-inner{
   position:relative;
   z-index:3;
-  max-width:560px;
+  max-width:520px;
 }
 .contact-hero-br{display:inline;}
 
-/* Mobile: hide cat */
+/* Mobile */
 @media(max-width:768px){
-  .contact-hero{min-height:auto;padding-top:100px;padding-bottom:60px;overflow:hidden;}
+  .contact-hero{min-height:auto;padding-top:100px;padding-bottom:60px;}
   .contact-hero-cat-wrap{
-    width:80%;
-    right:-10%;
+    top:auto;
     bottom:0;
-    opacity:0.18;
+    right:-5%;
+    width:75%;
+    height:55%;
+    opacity:0.22;
     z-index:1;
+    mask-image:linear-gradient(to right, transparent 0%, black 30%, black 100%);
+    -webkit-mask-image:linear-gradient(to right, transparent 0%, black 30%, black 100%);
   }
-  .contact-hero-inner{max-width:100%;z-index:3;position:relative;}
+  .contact-hero-inner{max-width:100%;z-index:3;}
   .contact-hero-br{display:none;}
 }
 
