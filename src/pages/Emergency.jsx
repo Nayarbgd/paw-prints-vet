@@ -7,14 +7,14 @@ const WHATSAPP = 'https://wa.me/971544337908?text=Emergency%20-%20My%20pet%20nee
 const DIRECTIONS = 'https://www.google.com/maps/place/Paw+Prints+Veterinary+Clinic/@25.0600842,55.2348111'
 
 const emergencySigns = [
-  { icon: '🫁', title: 'Difficulty Breathing', desc: 'Laboured breathing, open-mouth breathing, or blue/grey gums.' },
+  { icon: '💨', title: 'Difficulty Breathing', desc: 'Laboured breathing, open-mouth breathing, or blue/grey gums.' },
   { icon: '😵', title: 'Collapse / Unconsciousness', desc: 'Sudden loss of balance, inability to stand, or unresponsiveness.' },
   { icon: '⚡', title: 'Seizures', desc: 'Uncontrolled muscle movements, convulsions, or falling to one side.' },
   { icon: '🩸', title: 'Heavy Bleeding', desc: 'Bleeding that does not stop within 5 minutes of applying pressure.' },
   { icon: '☠️', title: 'Poison Ingestion', desc: 'Suspected swallowing of toxic plants, chemicals, medications, or foods.' },
   { icon: '🚗', title: 'Hit by a Car', desc: 'Any road traffic accident, even if the pet appears uninjured.' },
   { icon: '🚱', title: 'Unable to Urinate', desc: 'Straining without producing urine, especially in male cats — life-threatening.' },
-  { icon: '🫃', title: 'Bloated Abdomen', desc: 'Distended, hard, or painful belly — can indicate GDV (bloat).' },
+  { icon: '🎈', title: 'Bloated Abdomen', desc: 'Distended, hard, or painful belly — can indicate GDV (bloat).' },
   { icon: '🤢', title: 'Continuous Vomiting', desc: 'Vomiting more than 3 times in an hour, or vomiting blood.' },
   { icon: '🤧', title: 'Severe Allergic Reaction', desc: 'Sudden facial swelling, hives, vomiting, or collapse after exposure.' },
   { icon: '🌡️', title: 'Heatstroke', desc: 'Excessive panting, drooling, red gums, and high body temperature.' },
@@ -30,7 +30,7 @@ const actionGuide = [
   },
   {
     title: 'Difficulty Breathing',
-    icon: '🫁',
+    icon: '💨',
     do: ['Keep your pet as calm and still as possible.', 'Minimise movement — carry them to your vehicle.', 'Come to us immediately without delay.'],
     dont: ['Do NOT force food, water, or medication.'],
   },
@@ -54,7 +54,7 @@ const actionGuide = [
   },
   {
     title: 'Bloat / Swollen Abdomen',
-    icon: '🫃',
+    icon: '🎈',
     do: ['Seek immediate treatment — this is time-critical.', 'Keep the pet calm and drive directly to us.'],
     dont: ['Do NOT wait to see if it improves on its own.'],
   },
