@@ -47,7 +47,7 @@ export default function Services() {
           { to: '/contact', label: 'Book Appointment', variant: 'btn-primary' },
           { href: 'tel:0544337908', label: 'Call 054 433 7908', variant: 'btn-secondary' },
         ]}
-        fadeDivider
+        heroFade
       />
 
       {/* Services Grid */}

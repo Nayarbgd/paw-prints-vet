@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-export default function PageHero({ badge, title, subtitle, breadcrumbs = [], ctas = [], bgImage = null, bgSize = 'cover', bgPosition = 'center right', heroMinHeight = null, fadeDivider = false }) {
+export default function PageHero({ badge, title, subtitle, breadcrumbs = [], ctas = [], bgImage = null, bgSize = 'cover', bgPosition = 'center right', heroMinHeight = null, heroFade = false }) {
   const sectionStyle = bgImage ? {
     backgroundImage: `linear-gradient(90deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.80) 35%, rgba(0,0,0,0.35) 65%, rgba(0,0,0,0) 100%), url(${bgImage})`,
     backgroundSize: bgSize,
@@ -10,7 +10,7 @@ export default function PageHero({ badge, title, subtitle, breadcrumbs = [], cta
   } : {}
   return (
     <>
-      <section className={`page-hero${bgImage ? ' page-hero-cinematic' : ''}`} style={sectionStyle}>
+      <section className={`page-hero${bgImage ? ' page-hero-cinematic' : ''}${heroFade ? ' hero-fade' : ''}`} style={sectionStyle}>
         <div className="container">
           {breadcrumbs.length > 0 && (
             <nav className="breadcrumb" aria-label="Breadcrumb">
@@ -43,7 +43,6 @@ export default function PageHero({ badge, title, subtitle, breadcrumbs = [], cta
           )}
         </div>
       </section>
-      {fadeDivider && <div className="section-fade-divider" aria-hidden="true" />}
     </>
   )
 }

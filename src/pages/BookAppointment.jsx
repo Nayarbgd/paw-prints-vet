@@ -68,7 +68,7 @@ export default function BookAppointment() {
       />
 
       {/* ── Hero ── */}
-      <section className="book-page-hero">
+      <section className="book-page-hero hero-fade">
         <div className="container">
           <div className="book-page-hero-content">
             <div className="page-hero-badge">📅 Online Booking</div>
@@ -87,7 +87,6 @@ export default function BookAppointment() {
           </div>
         </div>
       </section>
-      <div className="section-fade-divider" aria-hidden="true" />
 
       {/* ── Cal.com Embed (auto-resizes — no scroll capture on mobile) ── */}
       <section className="book-cal-section">

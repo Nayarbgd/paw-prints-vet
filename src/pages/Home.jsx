@@ -60,7 +60,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="section-fade-divider" aria-hidden="true" />
 
       {/* Services */}
       <section className="section-padding bg-gray">
