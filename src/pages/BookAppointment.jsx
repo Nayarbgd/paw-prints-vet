@@ -68,7 +68,7 @@ export default function BookAppointment() {
       />
 
       {/* ── Hero ── */}
-      <section className="book-page-hero hero-fade">
+      <section className="book-page-hero">
         <div className="container">
           <div className="book-page-hero-content">
             <div className="page-hero-badge">📅 Online Booking</div>
