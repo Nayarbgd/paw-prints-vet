@@ -42,13 +42,14 @@ export default function CalBooking() {
            * Replace CAL_BOOKING_URL above with your Cal.com link.
            * The iframe automatically renders the full booking calendar.
            */
-          <iframe
-            src={CAL_BOOKING_URL}
-            title="Book an Appointment — Paw Prints Veterinary Clinic"
-            frameBorder="0"
-            scrolling="no"
-            allowFullScreen
-          />
+          <div className="cal-wrapper">
+            <iframe
+              src={CAL_BOOKING_URL}
+              title="Book an Appointment — Paw Prints Veterinary Clinic"
+              frameBorder="0"
+              allowFullScreen
+            />
+          </div>
         ) : (
           /* Shown until CAL_BOOKING_URL is configured */
           <div className="cal-placeholder">

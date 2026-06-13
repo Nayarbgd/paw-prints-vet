@@ -212,8 +212,9 @@ textarea.form-control{resize:vertical;min-height:100px;}
 .cal-emergency-icon{font-size:1.1rem;flex-shrink:0;margin-top:1px;}
 .cal-booking-emergency p{font-size:0.9rem;font-weight:600;color:var(--color-primary-hover);line-height:1.5;}
 .cal-booking-emergency a{color:var(--color-primary-hover);text-decoration:underline;}
-.cal-iframe-container{width:100%;border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-gray-light);}
-.cal-iframe-container iframe{width:100%;min-height:600px;border:none;display:block;}
+.cal-iframe-container{width:100%;border-radius:var(--radius-md);overflow:visible;border:1px solid var(--color-gray-light);}
+.cal-wrapper{width:100%;min-height:900px;overflow:visible;}
+.cal-wrapper iframe{width:100%;min-height:900px;border:none;display:block;}
 .cal-placeholder{display:flex;flex-direction:column;align-items:center;text-align:center;padding:60px 24px;gap:16px;background-color:var(--color-gray-light);border-radius:var(--radius-md);}
 .cal-placeholder-icon{font-size:3rem;line-height:1;}
 .cal-placeholder h4{font-size:1.3rem;color:var(--color-dark);}
@@ -225,7 +226,7 @@ textarea.form-control{resize:vertical;min-height:100px;}
 @media(max-width:768px){
   .cal-booking-card{padding:30px 20px;gap:20px;}
   .cal-booking-header h3{font-size:1.5rem;}
-  .cal-iframe-container iframe{min-height:500px;}
+  .cal-wrapper,.cal-wrapper iframe{min-height:1000px;}
   .cal-placeholder{padding:40px 16px;}
   .cal-placeholder-actions{flex-direction:column;align-items:stretch;}
 }
