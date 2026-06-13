@@ -339,6 +339,30 @@ footer{background-color:#0b0b0b;color:rgba(255,255,255,0.7);padding:80px 0 30px 
 .hours-highlight{color:var(--color-primary);font-weight:600;}
 .footer-bottom{border-top:1px solid rgba(255,255,255,0.05);padding-top:30px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;font-size:0.85rem;}
 
+/* Contact Cinematic Hero */
+.contact-hero{position:relative;min-height:100vh;background:#050505;display:flex;align-items:center;overflow:hidden;padding-top:88px;}
+.contact-hero-cat{position:absolute;top:0;right:0;width:65%;height:100%;object-fit:cover;object-position:left center;display:block;}
+.contact-hero-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(5,5,5,1) 30%,rgba(5,5,5,0.75) 55%,rgba(5,5,5,0.1) 100%),linear-gradient(to top,rgba(5,5,5,0.6) 0%,transparent 40%);}
+.contact-hero-inner{position:relative;z-index:2;padding-top:40px;padding-bottom:80px;max-width:560px;}
+.contact-hero-h1{font-size:3.4rem;font-weight:800;color:var(--color-white);letter-spacing:-1px;line-height:1.1;margin-bottom:20px;}
+.contact-hero-sub{font-size:1.15rem;color:rgba(255,255,255,0.72);line-height:1.7;margin-bottom:40px;}
+.contact-hero-ctas{display:flex;gap:16px;flex-wrap:wrap;}
+
+@media(max-width:991px){
+  .contact-hero-cat{width:80%;}
+  .contact-hero-h1{font-size:2.6rem;}
+}
+@media(max-width:768px){
+  .contact-hero{min-height:85vh;padding-top:72px;}
+  .contact-hero-cat{width:100%;opacity:0.35;}
+  .contact-hero-overlay{background:linear-gradient(to right,rgba(5,5,5,0.96) 0%,rgba(5,5,5,0.85) 100%);}
+  .contact-hero-inner{max-width:100%;padding-top:30px;padding-bottom:60px;}
+  .contact-hero-h1{font-size:2rem;}
+  .contact-hero-sub{font-size:1rem;}
+  .contact-hero-ctas{flex-direction:column;}
+  .contact-hero-ctas .btn{width:100%;}
+}
+
 /* Footer Instagram Button */
 .footer-instagram-btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);color:var(--color-white);padding:12px 24px;border-radius:var(--radius-full);font-weight:600;font-size:0.95rem;transition:var(--transition);box-shadow:0 4px 16px rgba(253,29,29,0.25);}
 .footer-instagram-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(253,29,29,0.4);opacity:0.92;}
