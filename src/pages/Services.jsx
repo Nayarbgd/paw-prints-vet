@@ -38,27 +38,16 @@ export default function Services() {
         title="Veterinary Services Dubai | Paw Prints Clinic Arjan"
         description="Complete veterinary services in Dubai: general checkups, vaccinations, emergency 24/7 care, dental treatment, lab tests, surgery, nutrition, and grooming for cats and dogs."
       />
-      {/* Cinematic layered hero */}
-      <section className="sch-hero">
-        <div className="sch-glow" />
-        <div className="sch-image" />
-        <div className="sch-gradient" />
-        <div className="sch-vignette" />
-        <div className="container sch-content">
-          <nav className="breadcrumb" aria-label="Breadcrumb">
-            <Link to="/">Home</Link>
-            <span className="crumb-sep">›</span>
-            <span className="crumb-current">Services</span>
-          </nav>
-          <div className="page-hero-badge">🐾 All Services</div>
-          <h1>Complete Veterinary Care<br />for Cats &amp; Dogs</h1>
-          <p className="subtitle">From routine checkups to life-saving emergency surgery — Paw Prints Clinic provides comprehensive veterinary care 24 hours a day, 7 days a week in Arjan, Dubai.</p>
-          <div className="page-hero-ctas">
-            <Link to="/contact" className="btn btn-primary">Book Appointment</Link>
-            <a href="tel:0544337908" className="btn btn-secondary">Call 054 433 7908</a>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        badge="All Services"
+        title="Complete Veterinary Care for Cats & Dogs"
+        subtitle="From routine checkups to life-saving emergency surgery — Paw Prints Clinic provides comprehensive veterinary care 24 hours a day, 7 days a week in Arjan, Dubai."
+        breadcrumbs={[{ label: 'Services' }]}
+        ctas={[
+          { to: '/contact', label: 'Book Appointment', variant: 'btn-primary' },
+          { href: 'tel:0544337908', label: 'Call 054 433 7908', variant: 'btn-secondary' },
+        ]}
+      />
 
       {/* Services Grid */}
       <section className="section-padding">
