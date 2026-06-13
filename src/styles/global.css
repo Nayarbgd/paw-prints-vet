@@ -213,12 +213,12 @@ textarea.form-control{resize:vertical;min-height:100px;}
 .book-page-subtitle{font-size:1.15rem;color:rgba(255,255,255,0.75);max-width:620px;line-height:1.7;margin-bottom:24px;}
 .book-page-emergency{display:inline-flex;align-items:flex-start;gap:10px;background:rgba(232,100,90,0.12);border:1px solid rgba(232,100,90,0.3);padding:12px 18px;border-radius:var(--radius-md);font-size:0.9rem;color:rgba(255,255,255,0.85);line-height:1.5;}
 .book-page-emergency a{color:var(--color-primary);font-weight:600;}
-.book-cal-section{background:var(--color-white);padding:60px 0 0;}
-.book-cal-container{max-width:1200px;margin:0 auto;padding:0 24px;}
-.book-cal-wrapper{width:100%;min-height:950px;overflow:visible;}
-.book-cal-wrapper iframe{width:100%;min-height:950px;border:none;display:block;}
-.book-page-footer{padding:48px 0 80px;text-align:center;border-top:1px solid var(--color-gray-light);}
-.book-footer-label{font-size:1rem;color:var(--color-gray-dark);margin-bottom:16px;}
+.book-cal-section{background:#0f0f0f;padding:0;width:100%;}
+.book-cal-container{width:100%;max-width:none;margin:0;padding:0;}
+.book-cal-wrapper{width:100%;min-height:950px;overflow:visible;display:flex;justify-content:center;padding:20px;background:#0f0f0f;}
+.book-cal-wrapper iframe{width:100%;max-width:1100px;min-height:950px;border:none;display:block;}
+.book-page-footer{padding:48px 0 80px;text-align:center;background:#0f0f0f;border-top:1px solid rgba(255,255,255,0.08);}
+.book-footer-label{font-size:1rem;color:rgba(255,255,255,0.6);margin-bottom:16px;}
 .book-footer-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
 
 /* Contact page (info-only) */
@@ -238,7 +238,8 @@ textarea.form-control{resize:vertical;min-height:100px;}
   .book-page-hero{padding:120px 0 60px;}
   .book-page-hero-content h1{font-size:2.1rem;}
   .book-page-subtitle{font-size:1rem;}
-  .book-cal-container{padding:0 12px;}
+  .book-cal-container{padding:0;}
+  .book-cal-wrapper{padding:0 14px;}
   .book-cal-wrapper,.book-cal-wrapper iframe{min-height:1000px;}
   .book-page-footer{padding:36px 0 60px;}
   .contact-page-grid{grid-template-columns:1fr;}
