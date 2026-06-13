@@ -339,6 +339,10 @@ footer{background-color:#0b0b0b;color:rgba(255,255,255,0.7);padding:80px 0 30px 
 .hours-highlight{color:var(--color-primary);font-weight:600;}
 .footer-bottom{border-top:1px solid rgba(255,255,255,0.05);padding-top:30px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;font-size:0.85rem;}
 
+/* Footer Instagram Button */
+.footer-instagram-btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);color:var(--color-white);padding:12px 24px;border-radius:var(--radius-full);font-weight:600;font-size:0.95rem;transition:var(--transition);box-shadow:0 4px 16px rgba(253,29,29,0.25);}
+.footer-instagram-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(253,29,29,0.4);opacity:0.92;}
+
 /* WhatsApp Float */
 .whatsapp-float{position:fixed;bottom:30px;right:30px;width:60px;height:60px;background-color:var(--color-whatsapp);color:var(--color-white);border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(37,211,102,0.4);z-index:999;animation:bounce-loop 2s infinite;transition:var(--transition);}
 .whatsapp-float:hover{background-color:var(--color-whatsapp-hover);transform:scale(1.08) translateY(-3px);box-shadow:0 12px 35px rgba(37,211,102,0.5);animation:none;}

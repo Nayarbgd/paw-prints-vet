@@ -11,9 +11,10 @@ export default function Footer() {
             <img src="/logo.png" alt="Paw Prints Veterinary Clinic" className="logo-img" />
           </Link>
           <p>Your primary veterinary care asset in Arjan, Dubai. Providing round-the-clock emergency medical diagnostics, dental scaling, surgeries, and vaccine schedules for cats and dogs.</p>
-          <div className="social-links">
-            <a href="https://instagram.com/pawprints.vet" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
-              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" strokeWidth="2" fill="none"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" strokeWidth="2" fill="none"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" strokeWidth="2" fill="none"/></svg>
+          <div style={{ display:'flex', justifyContent:'center', marginTop:28 }}>
+            <a href="https://instagram.com/pawprints.vet" target="_blank" rel="noopener noreferrer" className="footer-instagram-btn" aria-label="Follow us on Instagram">
+              <svg width="22" height="22" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" strokeWidth="2" fill="none"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" strokeWidth="2" fill="none"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" strokeWidth="2" fill="none"/></svg>
+              Follow on Instagram
             </a>
           </div>
         </div>
