@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import SEOHead from '../components/SEOHead'
 import TestimonialsCarousel from '../components/TestimonialsCarousel'
 import CTASection from '../components/CTASection'
-import BookingForm from '../components/BookingForm'
+import CalBooking from '../components/CalBooking'
 
 const ArrowIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -47,7 +47,8 @@ export default function Home() {
             <h1>Dubai's Most Trusted 24/7 Veterinary Care — For the Pets You Love Most</h1>
             <p>Comprehensive care for cats and dogs in Arjan. Quick response, state-of-the-art diagnostic clinic, and dedicated after-hours emergency vet support.</p>
             <div className="hero-ctas">
-              <Link to="/contact" className="btn btn-primary">Book Appointment</Link>
+              {/* Navigates to the Contact page and scrolls smoothly to the booking calendar */}
+              <Link to="/contact#cal-booking" className="btn btn-primary">Book Appointment</Link>
               <a href="tel:0544337908" className="btn btn-secondary">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 Call 054 433 7908
@@ -141,8 +142,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Booking + Map */}
-      <section className="section-padding bg-charcoal booking-section">
+      {/* Booking + Map — id="cal-booking" anchors the scroll from other pages */}
+      <section id="cal-booking" className="section-padding bg-charcoal booking-section">
         <div className="container">
           <div className="booking-wrapper">
             <div className="location-info reveal-on-scroll">
@@ -152,10 +153,10 @@ export default function Home() {
               </div>
               <div className="contact-details">
                 {[
-                  { icon: <><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" strokeWidth="2"/><circle cx="12" cy="10" r="3" strokeWidth="2"/></>, title: 'Address', lines: ['Arjan, Nas 2 Building, Shop 1 - Dubai', <span style={{ fontSize: '0.85rem', color: 'var(--color-primary)' }}>Plus Code: 366P+2X Dubai</span>] },
-                  { icon: <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" strokeWidth="2"/>, title: 'Phone Number', lines: [<a href="tel:0544337908">054 433 7908</a>, <span style={{ fontSize: '0.85rem', color: '#2ecc71' }}>Available 24/7 for emergency calls</span>] },
-                  { icon: <><circle cx="12" cy="12" r="10" strokeWidth="2"/><polyline points="12 6 12 12 16 14" strokeWidth="2"/></>, title: 'Working Hours', lines: ['Open 24 Hours / 7 Days a week', <span style={{ fontSize: '0.85rem', color: 'var(--color-primary)' }}>Including weekends and public holidays</span>] },
-                  { icon: <><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" strokeWidth="2"/><polyline points="22,6 12,13 2,6" strokeWidth="2"/></>, title: 'Email Support', lines: [<a href="mailto:paw.print.vetclinic@gmail.com">paw.print.vetclinic@gmail.com</a>] },
+                  { icon: <><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" strokeWidth="2"/><circle cx="12" cy="10" r="3" strokeWidth="2"/></>, title: 'Address', lines: ['Arjan, Nas 2 Building, Shop 1 - Dubai', <span key="pc" style={{ fontSize: '0.85rem', color: 'var(--color-primary)' }}>Plus Code: 366P+2X Dubai</span>] },
+                  { icon: <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" strokeWidth="2"/>, title: 'Phone Number', lines: [<a key="ph" href="tel:0544337908">054 433 7908</a>, <span key="em" style={{ fontSize: '0.85rem', color: '#2ecc71' }}>Available 24/7 for emergency calls</span>] },
+                  { icon: <><circle cx="12" cy="12" r="10" strokeWidth="2"/><polyline points="12 6 12 12 16 14" strokeWidth="2"/></>, title: 'Working Hours', lines: ['Open 24 Hours / 7 Days a week', <span key="wh" style={{ fontSize: '0.85rem', color: 'var(--color-primary)' }}>Including weekends and public holidays</span>] },
+                  { icon: <><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" strokeWidth="2"/><polyline points="22,6 12,13 2,6" strokeWidth="2"/></>, title: 'Email Support', lines: [<a key="em2" href="mailto:paw.print.vetclinic@gmail.com">paw.print.vetclinic@gmail.com</a>] },
                 ].map((c, i) => (
                   <div className="contact-item" key={i}>
                     <div className="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">{c.icon}</svg></div>
@@ -168,7 +169,7 @@ export default function Home() {
               </div>
             </div>
             <div className="reveal-on-scroll">
-              <BookingForm />
+              <CalBooking />
             </div>
           </div>
         </div>

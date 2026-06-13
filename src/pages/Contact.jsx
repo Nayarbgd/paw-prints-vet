@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import SEOHead from '../components/SEOHead'
 import PageHero from '../components/PageHero'
-import BookingForm from '../components/BookingForm'
+import CalBooking from '../components/CalBooking'
 
 const contactItems = [
   {
@@ -59,12 +59,12 @@ export default function Contact() {
     <>
       <SEOHead
         title="Book Appointment | Paw Prints Veterinary Clinic Dubai"
-        description="Book a vet appointment at Paw Prints Clinic in Arjan, Dubai. Open 24/7 for cats and dogs. Call 054 433 7908 or fill out our online booking form."
+        description="Book a vet appointment at Paw Prints Clinic in Arjan, Dubai. Open 24/7 for cats and dogs. Call 054 433 7908 or use our online booking calendar."
       />
       <PageHero
         badge="Contact & Booking"
         title="Book Your Appointment"
-        subtitle="Our clinic is open 24/7. Book online and we'll confirm your appointment within 15 minutes, or call us directly for immediate assistance."
+        subtitle="Our clinic is open 24/7. Book online via our calendar, or call us directly for immediate assistance."
         breadcrumbs={[{ label: 'Contact & Map' }]}
         ctas={[
           { href: 'tel:0544337908', label: '📞 Call 054 433 7908', variant: 'btn-primary' },
@@ -72,9 +72,12 @@ export default function Contact() {
         ]}
       />
 
-      <section className="section-padding bg-charcoal booking-section">
+      {/* id="cal-booking" is the scroll anchor — all "Book Appointment" buttons site-wide target this */}
+      <section id="cal-booking" className="section-padding bg-charcoal booking-section">
         <div className="container">
           <div className="booking-wrapper">
+
+            {/* LEFT — clinic info (unchanged) */}
             <div className="location-info reveal-on-scroll">
               <div>
                 <h2 style={{ fontSize: '2rem', marginBottom: 12, color: 'var(--color-white)' }}>Get in Touch</h2>
@@ -103,9 +106,12 @@ export default function Contact() {
                 />
               </div>
             </div>
+
+            {/* RIGHT — Cal.com booking widget */}
             <div className="reveal-on-scroll">
-              <BookingForm />
+              <CalBooking />
             </div>
+
           </div>
         </div>
       </section>

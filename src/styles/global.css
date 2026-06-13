@@ -204,6 +204,32 @@ textarea.form-control{resize:vertical;min-height:100px;}
 .form-notification.success{display:block;background-color:#d1e7dd;color:#0f5132;border:1px solid #badbcc;}
 .form-notification.error{display:block;background-color:#f8d7da;color:#842029;border:1px solid #f5c2c7;}
 
+/* Cal.com Booking Card */
+.cal-booking-card{background-color:var(--color-white);padding:50px 40px;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);border:1px solid var(--color-gray-light);color:var(--color-dark);display:flex;flex-direction:column;gap:28px;}
+.cal-booking-header h3{font-size:1.8rem;margin-bottom:8px;color:var(--color-dark);}
+.cal-booking-subtitle{color:var(--color-gray-dark);font-size:0.97rem;line-height:1.6;}
+.cal-booking-emergency{display:flex;align-items:flex-start;gap:12px;background-color:var(--color-primary-light);border-left:4px solid var(--color-primary);padding:14px 18px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;}
+.cal-emergency-icon{font-size:1.1rem;flex-shrink:0;margin-top:1px;}
+.cal-booking-emergency p{font-size:0.9rem;font-weight:600;color:var(--color-primary-hover);line-height:1.5;}
+.cal-booking-emergency a{color:var(--color-primary-hover);text-decoration:underline;}
+.cal-iframe-container{width:100%;border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-gray-light);}
+.cal-iframe-container iframe{width:100%;min-height:600px;border:none;display:block;}
+.cal-placeholder{display:flex;flex-direction:column;align-items:center;text-align:center;padding:60px 24px;gap:16px;background-color:var(--color-gray-light);border-radius:var(--radius-md);}
+.cal-placeholder-icon{font-size:3rem;line-height:1;}
+.cal-placeholder h4{font-size:1.3rem;color:var(--color-dark);}
+.cal-placeholder p{color:var(--color-gray-dark);font-size:0.95rem;max-width:380px;line-height:1.6;}
+.cal-placeholder-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:8px;}
+.cal-booking-footer{text-align:center;border-top:1px solid var(--color-gray-light);padding-top:20px;}
+.cal-booking-footer p{font-size:0.9rem;color:var(--color-gray-dark);margin-bottom:12px;}
+.cal-footer-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+@media(max-width:768px){
+  .cal-booking-card{padding:30px 20px;gap:20px;}
+  .cal-booking-header h3{font-size:1.5rem;}
+  .cal-iframe-container iframe{min-height:500px;}
+  .cal-placeholder{padding:40px 16px;}
+  .cal-placeholder-actions{flex-direction:column;align-items:stretch;}
+}
+
 /* CTA Section */
 .cta-section{background:linear-gradient(135deg,var(--color-dark) 0%,#1e1e1e 100%);color:var(--color-white);padding:100px 0;text-align:center;position:relative;overflow:hidden;}
 .cta-section::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(ellipse at center,rgba(232,100,90,0.08) 0%,transparent 60%);}

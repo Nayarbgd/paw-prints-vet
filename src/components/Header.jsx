@@ -30,7 +30,8 @@ export default function Header() {
         </ul>
 
         <div className="nav-cta">
-          <Link to="/contact" className="btn btn-primary header-btn">Book Appointment</Link>
+          {/* Links to Contact page and scrolls smoothly to the Cal.com booking widget */}
+          <Link to="/contact#cal-booking" className="btn btn-primary header-btn" onClick={closeMenu}>Book Appointment</Link>
           <button
             className={`mobile-toggle${mobileOpen ? ' active' : ''}`}
             onClick={() => setMobileOpen(!mobileOpen)}

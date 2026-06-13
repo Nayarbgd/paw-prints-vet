@@ -18,10 +18,24 @@ import Grooming from './pages/services/Grooming'
 import Surgery from './pages/services/Surgery'
 
 function ScrollToTop() {
-  const { pathname } = useLocation()
+  const { pathname, hash } = useLocation()
+
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'instant' })
-  }, [pathname])
+    if (hash) {
+      // When a hash is present (e.g. /contact#cal-booking), let the page render
+      // first, then scroll smoothly to the target element.
+      const timer = setTimeout(() => {
+        const el = document.getElementById(hash.replace('#', ''))
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      }, 80)
+      return () => clearTimeout(timer)
+    } else {
+      window.scrollTo({ top: 0, behavior: 'instant' })
+    }
+  }, [pathname, hash])
+
   return null
 }
 

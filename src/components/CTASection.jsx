@@ -4,7 +4,8 @@ export default function CTASection({
   title = 'Ready to Book an Appointment?',
   subtitle = 'Our clinic is open 24/7, including weekends and holidays. Your pet\'s health is our priority.',
   primaryText = 'Book Appointment',
-  primaryTo = '/contact',
+  /* All CTA "Book Appointment" buttons point to the Cal.com booking section in Contact */
+  primaryTo = '/contact#cal-booking',
   showCall = true,
   showWhatsApp = true,
 }) {
