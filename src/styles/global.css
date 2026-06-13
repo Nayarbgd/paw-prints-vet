@@ -105,6 +105,14 @@ header.scrolled{box-shadow:var(--shadow-md);}
 .breadcrumb .crumb-sep{color:rgba(255,255,255,0.25);}
 .breadcrumb .crumb-current{color:rgba(255,255,255,0.7);}
 
+/* Cinematic Page Hero (with background image) */
+.page-hero-cinematic{min-height:480px;display:flex;align-items:center;}
+.page-hero-cinematic .container{width:100%;max-width:600px;margin-left:0;}
+@media(max-width:768px){
+  .page-hero-cinematic{background-position:80% center !important;min-height:auto;}
+  .page-hero-cinematic .container{max-width:100%;}
+}
+
 /* Services Grid */
 .services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:30px;}
 .service-card{background-color:var(--color-white);padding:40px 30px;border-radius:var(--radius-md);box-shadow:var(--shadow-sm);border:1px solid var(--color-gray-light);transition:var(--transition);display:flex;flex-direction:column;}

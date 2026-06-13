@@ -1,0 +1,66 @@
+I am uploading a new image file (black cat cinematic hero image). Use this image as the background for the hero section at the top of the "Contact & Map" page.
+
+IMPORTANT:
+Do NOT redesign the section.
+Do NOT move the existing content.
+Do NOT change typography, button sizes, spacing, or alignment.
+
+The current layout is already correct.
+
+Requirements:
+
+1. Use the uploaded cat image as the hero background image.
+
+2. Keep all existing elements exactly where they are:
+
+* Breadcrumb ("Home > Contact & Map")
+* Contact badge
+* Heading ("Find Us in Dubai")
+* Paragraph text
+* Call button
+* WhatsApp button
+
+Everything must remain in exactly the same position, size, and proportions as it is now.
+
+3. The cat image should behave like a premium cinematic hero background:
+
+* background-size: cover;
+* background-position: center right;
+* background-repeat: no-repeat;
+
+4. Add a dark overlay to preserve text readability:
+
+linear-gradient(
+90deg,
+rgba(0,0,0,0.92) 0%,
+rgba(0,0,0,0.80) 35%,
+rgba(0,0,0,0.35) 65%,
+rgba(0,0,0,0) 100%
+)
+
+5. Preserve the composition of the uploaded image:
+
+* The cat remains on the RIGHT side.
+* The left side stays dark and empty for text and buttons.
+* The cat's eyes and face must remain fully visible.
+* Do not crop the face.
+* Do not place text over the cat.
+
+6. Desktop:
+   The hero should look exactly like a luxury veterinary website banner:
+
+* cat occupying approximately the right 45% of the hero;
+* text block occupying the left side;
+* premium cinematic appearance.
+
+7. Mobile optimization:
+
+* Maintain readability of all text.
+* Reduce the visual prominence of the cat slightly (lower opacity or reposition further right if necessary).
+* Keep all text and buttons fully visible.
+* No horizontal scrolling.
+* No image clipping.
+* No elements overlapping the cat's eyes.
+* Maintain the same visual atmosphere and dark aesthetic.
+
+8. The final result should feel like a high-end, cinematic, emotionally engaging veterinary website hero section, with the cat naturally integrated into the background rather than appearing pasted on top.
