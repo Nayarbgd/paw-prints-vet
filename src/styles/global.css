@@ -179,6 +179,7 @@ header.scrolled{box-shadow:var(--shadow-md);}
 .contact-item{display:flex;gap:20px;}
 .contact-icon{width:48px;height:48px;border-radius:var(--radius-md);background-color:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--color-primary);}
 .contact-icon svg{width:22px;height:22px;stroke:currentColor;fill:none;}
+.contact-text{min-width:0;word-break:break-word;overflow-wrap:anywhere;}
 .contact-text h4{font-size:1.1rem;margin-bottom:4px;color:var(--color-white);}
 .contact-text p,.contact-text a{color:rgba(255,255,255,0.7);font-size:0.95rem;}
 .contact-text a:hover{color:var(--color-primary);}
@@ -242,8 +243,8 @@ textarea.form-control{resize:vertical;min-height:100px;}
   .book-cal-wrapper{padding:0 14px;min-height:1200px;touch-action:pan-y;-webkit-overflow-scrolling:touch;}
   .book-cal-wrapper iframe{min-height:1200px;touch-action:pan-y;-webkit-overflow-scrolling:touch;}
   .book-page-footer{padding:36px 0 60px;}
-  .contact-page-grid{grid-template-columns:1fr;width:100%;margin-left:0;margin-right:0;}
-  .contact-page-card{width:calc(100% - 32px);max-width:100%;margin-left:auto;margin-right:auto;padding-left:20px;padding-right:20px;box-sizing:border-box;}
+  .contact-page-grid{grid-template-columns:1fr;width:100%;margin:0;padding:0;}
+  .contact-page-card{width:100%;max-width:100%;margin:0;padding:20px 16px;box-sizing:border-box;}
   .contact-page-map{height:300px;}
 }
 
