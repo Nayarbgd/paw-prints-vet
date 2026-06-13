@@ -1,14 +1,13 @@
 import { useEffect } from 'react'
 import SEOHead from '../components/SEOHead'
 import PageHero from '../components/PageHero'
-import CalBooking from '../components/CalBooking'
 
 const contactItems = [
   {
     icon: <><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" strokeWidth="2"/><circle cx="12" cy="10" r="3" strokeWidth="2"/></>,
     title: 'Our Address',
     lines: [
-      <span key="a">Arjan, Nas 2 Building, Shop 1 - Dubai, UAE</span>,
+      <span key="a">Arjan, Nas 2 Building, Shop 1 — Dubai, UAE</span>,
       <span key="b" style={{ fontSize: '0.85rem', color: 'var(--color-primary)' }}>Plus Code: 366P+2X Dubai</span>,
       <a key="c" href="https://maps.google.com/maps?q=366P%2B2X+Dubai" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.85rem', color: 'var(--color-primary)', fontWeight: 600 }}>Get Directions →</a>
     ]
@@ -58,13 +57,13 @@ export default function Contact() {
   return (
     <>
       <SEOHead
-        title="Book Appointment | Paw Prints Veterinary Clinic Dubai"
-        description="Book a vet appointment at Paw Prints Clinic in Arjan, Dubai. Open 24/7 for cats and dogs. Call 054 433 7908 or use our online booking calendar."
+        title="Contact & Location | Paw Prints Veterinary Clinic Dubai"
+        description="Find Paw Prints Veterinary Clinic in Arjan, Dubai. Open 24/7. Call 054 433 7908, WhatsApp us, or get directions to our clinic."
       />
       <PageHero
-        badge="Contact & Booking"
-        title="Book Your Appointment"
-        subtitle="Our clinic is open 24/7. Book online via our calendar, or call us directly for immediate assistance."
+        badge="Contact & Map"
+        title="Find Us in Dubai"
+        subtitle="We're located in Arjan and open around the clock — every day of the year, including holidays."
         breadcrumbs={[{ label: 'Contact & Map' }]}
         ctas={[
           { href: 'tel:0544337908', label: '📞 Call 054 433 7908', variant: 'btn-primary' },
@@ -72,47 +71,40 @@ export default function Contact() {
         ]}
       />
 
-      {/* id="cal-booking" is the scroll anchor — all "Book Appointment" buttons site-wide target this */}
-      <section id="cal-booking" className="section-padding bg-charcoal booking-section">
+      {/* Contact details */}
+      <section className="section-padding bg-charcoal">
         <div className="container">
-          <div className="booking-wrapper">
 
-            {/* LEFT — clinic info (unchanged) */}
-            <div className="location-info reveal-on-scroll">
-              <div>
-                <h2 style={{ fontSize: '2rem', marginBottom: 12, color: 'var(--color-white)' }}>Get in Touch</h2>
-                <p style={{ color: 'rgba(255,255,255,0.7)', lineHeight: 1.7 }}>We're here for your pet around the clock. Whether it's a routine checkup or a midnight emergency, our team is always ready.</p>
-              </div>
-              <div className="contact-details">
-                {contactItems.map((c, i) => (
-                  <div className="contact-item" key={i}>
-                    <div className="contact-icon">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">{c.icon}</svg>
-                    </div>
-                    <div className="contact-text">
-                      <h4>{c.title}</h4>
-                      {c.lines.map((l, j) => <p key={j}>{l}</p>)}
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="map-embed">
-                <iframe
-                  src="https://maps.google.com/maps?q=366P%2B2X+Dubai&output=embed"
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Paw Prints Clinic Location"
-                />
-              </div>
-            </div>
-
-            {/* RIGHT — Cal.com booking widget */}
-            <div className="reveal-on-scroll">
-              <CalBooking />
-            </div>
-
+          <div className="contact-page-header reveal-on-scroll">
+            <h2>Get in Touch</h2>
+            <p>Whether it's a routine checkup or a midnight emergency, our team is always ready for your pet.</p>
           </div>
+
+          <div className="contact-page-grid reveal-on-scroll">
+            {contactItems.map((c, i) => (
+              <div className="contact-page-card" key={i}>
+                <div className="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">{c.icon}</svg>
+                </div>
+                <div className="contact-text">
+                  <h4>{c.title}</h4>
+                  {c.lines.map((l, j) => <p key={j}>{l}</p>)}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Full-width map */}
+          <div className="contact-page-map reveal-on-scroll">
+            <iframe
+              src="https://maps.google.com/maps?q=366P%2B2X+Dubai&output=embed"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Paw Prints Clinic Location"
+            />
+          </div>
+
         </div>
       </section>
     </>

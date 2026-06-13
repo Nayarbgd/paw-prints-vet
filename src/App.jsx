@@ -8,6 +8,7 @@ import Services from './pages/Services'
 import Reviews from './pages/Reviews'
 import OurVets from './pages/OurVets'
 import Contact from './pages/Contact'
+import BookAppointment from './pages/BookAppointment'
 import GeneralCheckups from './pages/services/GeneralCheckups'
 import Vaccinations from './pages/services/Vaccinations'
 import EmergencyCare from './pages/services/EmergencyCare'
@@ -22,13 +23,9 @@ function ScrollToTop() {
 
   useEffect(() => {
     if (hash) {
-      // When a hash is present (e.g. /contact#cal-booking), let the page render
-      // first, then scroll smoothly to the target element.
       const timer = setTimeout(() => {
         const el = document.getElementById(hash.replace('#', ''))
-        if (el) {
-          el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-        }
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
       }, 80)
       return () => clearTimeout(timer)
     } else {
@@ -47,6 +44,7 @@ function AppRoutes() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/book-appointment" element={<BookAppointment />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/general-checkups" element={<GeneralCheckups />} />
           <Route path="/services/vaccinations" element={<Vaccinations />} />
