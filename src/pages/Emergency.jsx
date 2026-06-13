@@ -4,7 +4,7 @@ import SEOHead from '../components/SEOHead'
 
 const PHONE = 'tel:0544337908'
 const WHATSAPP = 'https://wa.me/971544337908?text=Emergency%20-%20My%20pet%20needs%20urgent%20care'
-const DIRECTIONS = 'https://www.google.com/maps/place/Paw+Prints+Veterinary+Clinic/@25.0600842,55.2348111'
+const DIRECTIONS = 'https://maps.google.com/maps?q=366P%2B2X+Dubai'
 
 const emergencySigns = [
   { icon: '💨', title: 'Difficulty Breathing', desc: 'Laboured breathing, open-mouth breathing, or blue/grey gums.' },
@@ -225,8 +225,8 @@ export default function Emergency() {
             <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp emg-btn-lg">
               <span>💬</span> WhatsApp Emergency Team
             </a>
-            <a href={DIRECTIONS} target="_blank" rel="noopener noreferrer" className="btn btn-secondary emg-btn-lg">
-              <span>📍</span> Get Directions
+            <a href={DIRECTIONS} target="_blank" rel="noopener noreferrer" className="btn emg-btn-here emg-btn-lg">
+              📍 WE ARE HERE
             </a>
           </div>
 
@@ -388,8 +388,8 @@ export default function Emergency() {
               <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp emg-btn-lg">
                 <span>💬</span> WhatsApp Emergency Team
               </a>
-              <a href={DIRECTIONS} target="_blank" rel="noopener noreferrer" className="btn btn-secondary emg-btn-lg">
-                <span>📍</span> Get Directions
+              <a href={DIRECTIONS} target="_blank" rel="noopener noreferrer" className="btn emg-btn-here emg-btn-lg">
+                📍 WE ARE HERE
               </a>
             </div>
           </div>
